@@ -1,0 +1,16 @@
+<div *ngFor="let comment of comments.results">
+    <div class="row" >
+        <div class="col-6" style="font-weight: bold;">
+            {{comment.author}}
+        </div>
+        <div class="col-6 text-right">
+            {{comment.date | date}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>{{comment.text}}</p>
+        </div>
+    </div>
+    <br>
+</div>

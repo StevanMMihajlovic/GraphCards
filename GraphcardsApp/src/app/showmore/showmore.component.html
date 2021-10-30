@@ -1,0 +1,7 @@
+<div>
+    <p>{{showText}}</p>
+    <div *ngIf="description.length > textSize">
+        <a class="cursorPointer" *ngIf="isShowMore" (click)="clickOne()">[Show more]</a>
+        <a class="cursorPointer" *ngIf="!isShowMore" (click)="clickTwo()">[Show less]</a>
+    </div>
+</div>

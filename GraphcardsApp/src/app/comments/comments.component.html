@@ -1,0 +1,21 @@
+<div class="row">
+    <form>
+        <div class="row">
+            <div class="col-12">
+                <input type="text" name="author" placeholder="Name" size="40" [(ngModel)]="newCom.author">
+            </div>
+            <div class="col-12">
+                <br>
+                <textarea type="text" name="text" placeholder="Comment" cols="43" rows="3" [(ngModel)]="newCom.text"></textarea>
+            </div>
+            <div>
+                <br>
+                <button type="button" class="btn btn-primary" (click)="postComment()">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<br>
+<div class="row">
+    <app-onecomment [comments]="comments"></app-onecomment>
+</div>
